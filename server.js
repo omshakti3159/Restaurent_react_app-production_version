@@ -2,7 +2,7 @@ const express = require('express')
 const http = require('http')
 const path = require('path')
 const app = express()
-const Port = 3159
+const Port = process.env.PORT || 3159
 
 
 app.use(express.static(path.join(__dirname, 'build')))
